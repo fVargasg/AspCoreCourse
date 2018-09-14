@@ -38,8 +38,8 @@ login(model: any) {
     );
   }
 
-  register(model: any) {
-    return this.htttp.post(this.baseUrl + 'register', model);
+  register(user: User) {
+    return this.htttp.post(this.baseUrl + 'register', user);
   }
 
   loggedIn() {
